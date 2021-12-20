@@ -1,0 +1,53 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+
+
+.botaoHover:hover{
+    -fx-background-color: #2b2c31;
+    -fx-border-color: WHITE;
+    -fx-border-width: 0.0px 0.0px 0.0px 0.0px;
+}
+
+.botaoHover2:hover{
+    -fx-background-color: #3c3d48;
+    -fx-border-color: WHITE;
+    -fx-border-width: 0.0px 0.0px 0.0px 0.0px;
+}
+.botaoHover3:hover{
+    -fx-background-color: #fffbff;
+    -fx-border-color: WHITE;
+    -fx-border-width: 0.0px 0.0px 0.0px 0.0px;
+    -fx-text-fill: #3c3d48;
+}
+
+.botaoHoverLaranja:hover{
+    -fx-background-color: #ff4d15;
+    -fx-border-color: WHITE;
+    -fx-border-width: 0.0px 0.0px 0.0px 0.0px;
+}
+.botaoHoverAzul:hover{
+    -fx-background-color: #33a0ad;
+    -fx-border-color: WHITE;
+    -fx-border-width: 0.0px 0.0px 0.0px 0.0px;
+}
+
+.botao { 
+    -fx-background-color: #3c3d48;
+        -fx-background-radius: 40.0;
+}
+
+.botao2 { 
+    -fx-background-color: #2b2c31;
+    -fx-background-radius: 40.0;
+}
+
+.botao3 {
+	    -fx-background-color: #ff4d15;
+	        -fx-background-radius: 40.0;
+	
+}
+
+.transparent{
+    -fx-background-color: rgba(0.0,0.0,0.0,0.0);
+}

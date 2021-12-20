@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="540.0" prefWidth="475.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.telaCadProdController">
+   <children>
+      <BorderPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="475.0" prefWidth="475.0" style="-fx-background-color: #fffbff; -fx-border-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="34.0" prefWidth="433.0" text="CADASTRO DE PRODUTO" textFill="#3a3d49" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="40.0" />
+               </BorderPane.margin>
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="347.0" prefWidth="473.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label prefHeight="31.0" prefWidth="174.0" text="NOME:" textFill="#3a3d49">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="35.0" right="35.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtNome" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="517.0" promptText="Digite o nome do produto">
+                     <VBox.margin>
+                        <Insets left="35.0" right="35.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label prefHeight="31.0" prefWidth="174.0" text="VALOR DE CUSTO:" textFill="#3a3d49">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="35.0" right="35.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtValorCusto" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="517.0" promptText="Digite o valor de custo (0.00)">
+                     <VBox.margin>
+                        <Insets left="35.0" right="35.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label prefHeight="31.0" prefWidth="174.0" text="VALOR DE VENDA:" textFill="#3a3d49">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="35.0" right="35.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="txtValorVenda" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="480.0" promptText="Informe o valor de custo (0.00)">
+                     <VBox.margin>
+                        <Insets left="35.0" right="35.0" />
+                     </VBox.margin>
+                  </TextField>
+                  <Label prefHeight="31.0" prefWidth="341.0" text="SELECIONE O FORNECEDOR" textFill="#3a3d49">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="35.0" right="35.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ComboBox fx:id="cbFornecedor" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="25.0" prefWidth="467.0">
+                     <VBox.margin>
+                        <Insets left="35.0" right="35.0" />
+                     </VBox.margin>
+                  </ComboBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="52.0" prefWidth="473.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#cadastraProduto" prefHeight="77.0" prefWidth="160.0" style="-fx-background-radius: 40;" stylesheets="@application.css" text="CADASTRAR" textFill="WHITE">
+                     <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Leelawadee Bold" size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="botao" />
+                        <String fx:value="botaoHoverLaranja" />
+                     </styleClass>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#voltar" prefHeight="77.0" prefWidth="160.0" style="-fx-background-radius: 40;" stylesheets="@application.css" text="FECHAR" textFill="WHITE">
+                     <font>
+                        <Font name="Leelawadee Bold" size="18.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="botao" />
+                        <String fx:value="botaoHoverLaranja" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" top="10.0" />
+               </BorderPane.margin>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>
