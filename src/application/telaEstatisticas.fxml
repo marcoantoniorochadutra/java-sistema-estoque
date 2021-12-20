@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="961.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.telaEstatisticasController">
+   <children>
+      <BorderPane layoutX="-7.0" layoutY="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="934.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="266.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="269.0" style="-fx-background-color: #33a0ad;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button defaultButton="true" layoutX="34.0" layoutY="176.0" mnemonicParsing="false" onAction="#maisVendido" prefHeight="45.0" prefWidth="200.0" style="-fx-background-radius: 40;" stylesheets="@application.css" text="MAIS VENDIDOS" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="botao2" />
+                              <String fx:value="botaoHover3" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button defaultButton="true" layoutX="34.0" layoutY="236.0" mnemonicParsing="false" onAction="#maisLucro" prefHeight="45.0" prefWidth="200.0" style="-fx-background-radius: 40;" stylesheets="@application.css" text="MAIOR LUCRO" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="botao2" />
+                              <String fx:value="botaoHover3" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button defaultButton="true" layoutX="35.0" layoutY="296.0" mnemonicParsing="false" onAction="#abrirCadastro" prefHeight="45.0" prefWidth="200.0" style="-fx-background-radius: 40;" stylesheets="@application.css" text="CADASTRA PRODUTO" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="botao2" />
+                              <String fx:value="botaoHover3" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Pane layoutX="11.0" layoutY="52.0" prefHeight="41.0" prefWidth="246.0" style="-fx-background-color: white; -fx-background-radius: 40;">
+                           <children>
+                              <TextField fx:id="txtPesquisa" alignment="CENTER" layoutX="6.0" layoutY="8.0" prefHeight="25.0" prefWidth="140.0" promptText="INSIRA O NOME DO PRODUTO" styleClass="transparent" stylesheets="@application.css">
+                                 <font>
+                                    <Font size="9.0" />
+                                 </font>
+                              </TextField>
+                              <Button layoutX="156.0" layoutY="8.0" mnemonicParsing="false" onAction="#pesquisarProdutos" prefHeight="25.0" prefWidth="83.0" style="-fx-background-radius: 40;" stylesheets="@application.css" text="PESQUISAR" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="botao2" />
+                                    <String fx:value="botaoHover3" />
+                                 </styleClass>
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </Pane>
+                        <Button defaultButton="true" layoutX="34.0" layoutY="356.0" mnemonicParsing="false" onAction="#apagarProduto" prefHeight="45.0" prefWidth="200.0" style="-fx-background-radius: 40;" stylesheets="@application.css" text="APAGAR PRODUTO" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="botao2" />
+                              <String fx:value="botaoHover3" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <Button defaultButton="true" layoutX="34.0" layoutY="416.0" mnemonicParsing="false" onAction="#buscaProdutos" prefHeight="45.0" prefWidth="200.0" style="-fx-background-radius: 40;" stylesheets="@application.css" text="ATUALIZAR ESTOQUE" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="botao2" />
+                              <String fx:value="botaoHover3" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                     </children></Pane>
+               </children></AnchorPane>
+         </left>
+         <bottom>
+            <AnchorPane prefHeight="0.0" prefWidth="1008.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane layoutX="11.0" layoutY="-55.0" prefHeight="41.0" prefWidth="246.0" style="-fx-background-color: white; -fx-background-radius: 40;">
+                     <children>
+                        <TextField fx:id="txtAdicao" alignment="CENTER" layoutX="6.0" layoutY="8.0" prefHeight="25.0" prefWidth="140.0" promptText="INFORME A QUANTIDADE" styleClass="transparent" stylesheets="@application.css">
+                           <font>
+                              <Font size="9.0" />
+                           </font>
+                        </TextField>
+                        <Button layoutX="143.0" layoutY="8.0" mnemonicParsing="false" onAction="#adicionarEstoque" prefHeight="25.0" prefWidth="96.0" style="-fx-background-radius: 40;" stylesheets="@application.css" text="ADICIONAR" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="botao2" />
+                              <String fx:value="botaoHover3" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </AnchorPane>
+         </bottom>
+         <center>
+            <TableView fx:id="tblEstoque" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseReleased="#selecionaProduto" prefHeight="600.0" prefWidth="294.0" stylesheets="@application.css" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="50.0" resizable="false" text="ID" />
+                <TableColumn fx:id="colNome" prefWidth="97.0" text="NOME" />
+                  <TableColumn fx:id="colVlrCusto" prefWidth="112.0" resizable="false" sortable="false" text="VLR. DE CUSTO" />
+                  <TableColumn fx:id="colVlrVenda" prefWidth="104.0" resizable="false" sortable="false" text="VLR. DE VENDA" />
+                  <TableColumn fx:id="colQuantidade" prefWidth="60.0" resizable="false" sortable="false" text="ESTOQUE" />
+                  <TableColumn fx:id="colCodFornecedor" prefWidth="123.0" sortable="false" text="COD. FORNECEDOR" />
+                  <TableColumn fx:id="colQtdVenda" prefWidth="95.0" resizable="false" text="QTD. VENDAS" visible="false" />
+                  <TableColumn fx:id="colLucro" prefWidth="95.0" resizable="false" text="LUCRO (%)" visible="false" />
+              </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

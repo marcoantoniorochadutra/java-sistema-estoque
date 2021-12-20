@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="961.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.telaFornecedorController">
+   <children>
+      <BorderPane layoutX="-7.0" layoutY="1.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="934.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="266.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="600.0" prefWidth="269.0" style="-fx-background-color: #33a0ad;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Button defaultButton="true" layoutX="24.0" layoutY="176.0" mnemonicParsing="false" onAction="#abrirCadastro" prefHeight="45.0" prefWidth="210.0" style="-fx-background-radius: 40;" stylesheets="@application.css" text="CADASTRA FORNECEDOR" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="botao2" />
+                              <String fx:value="botaoHover3" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Pane layoutX="11.0" layoutY="52.0" prefHeight="41.0" prefWidth="246.0" style="-fx-background-color: white; -fx-background-radius: 40;">
+                           <children>
+                              <Button layoutX="166.0" layoutY="8.0" mnemonicParsing="false" onAction="#pesquisarFornecedor" prefHeight="25.0" prefWidth="75.0" style="-fx-background-radius: 40;" stylesheets="@application.css" text="PESQUISAR" textFill="WHITE">
+                                 <styleClass>
+                                    <String fx:value="botao2" />
+                                    <String fx:value="botaoHover3" />
+                                 </styleClass>
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                              </Button>
+                              <TextField fx:id="txtPesquisa" layoutY="10.0" prefHeight="21.0" prefWidth="175.0" promptText="INISRA O NOME DO FORNECEDOR" styleClass="transparent" stylesheets="@application.css">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </TextField>
+                           </children>
+                        </Pane>
+                        <Button defaultButton="true" layoutX="24.0" layoutY="236.0" mnemonicParsing="false" onAction="#apagarFornecedor" prefHeight="45.0" prefWidth="210.0" style="-fx-background-radius: 40;" stylesheets="@application.css" text="APAGAR FORNECEDOR" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="botao2" />
+                              <String fx:value="botaoHover3" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button defaultButton="true" layoutX="24.0" layoutY="296.0" mnemonicParsing="false" onAction="#buscaFornecedores" prefHeight="45.0" prefWidth="210.0" style="-fx-background-radius: 40;" stylesheets="@application.css" text="ATUALIZAR FORNECEDORES" textFill="WHITE">
+                           <styleClass>
+                              <String fx:value="botao2" />
+                              <String fx:value="botaoHover3" />
+                           </styleClass>
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Button>
+                     </children></Pane>
+               </children></AnchorPane>
+         </left>
+         <bottom>
+            <AnchorPane prefHeight="0.0" prefWidth="1008.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <TableView fx:id="tblFornecedores" onMouseClicked="#selecionaFornecedor" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="colNome" prefWidth="75.0" text="NOME" />
+                  <TableColumn fx:id="colEmail" prefWidth="75.0" text="EMAIL" />
+                  <TableColumn fx:id="colCnpj" prefWidth="75.0" text="CNPJ" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

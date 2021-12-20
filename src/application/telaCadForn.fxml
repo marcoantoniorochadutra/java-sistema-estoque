@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="475.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.telaCadFornController">
+   <children>
+      <BorderPane cache="true" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="475.0" prefWidth="475.0" style="-fx-background-color: #33a0ad;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="475.0" prefWidth="475.0" style="-fx-background-color: #33a0ad;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label mouseTransparent="true" text="INSIRA O NOME DO FORNECEDOR*" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtNome" promptText="Insira o nome do fornecedor" />
+                  <Label text="INSIRA O E-MAIL DO FORNECEDOR*" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtEmail" promptText="Insira o e-mail do fornecedor" />
+                  <Label text="INSIRA O CNPJ DO FORNECEDOR*" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCNPJ" promptText="Insira o CNPJ do fornecedor" />
+                  <Label />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="35.0" right="35.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+         <bottom>
+            <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="95.0" prefWidth="475.0" style="-fx-background-color: #33a0ad;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#cadastraFornecedor" prefHeight="50.0" prefWidth="160.0" style="-fx-background-radius: 40;" stylesheets="@application.css" text="CADASTRAR" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="botao2" />
+                        <String fx:value="botaoHover3" />
+                     </styleClass>
+                  </Button>
+                  <Button alignment="CENTER" mnemonicParsing="false" onAction="#voltar" prefHeight="50.0" prefWidth="160.0" style="-fx-background-radius: 40;" stylesheets="@application.css" text="VOLTAR" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="21.0" />
+                     </font>
+                     <styleClass>
+                        <String fx:value="botao2" />
+                        <String fx:value="botaoHover3" />
+                     </styleClass>
+                     <HBox.margin>
+                        <Insets left="30.0" right="30.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+         <top>
+            <Label alignment="TOP_CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="23.0" prefWidth="435.0" style="-fx-background-color: #33a0ad;" text="CADASTRO DE FORNECEDOR" textFill="WHITE" BorderPane.alignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+               <BorderPane.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="40.0" />
+               </BorderPane.margin>
+            </Label>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>
